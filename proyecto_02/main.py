@@ -9,10 +9,10 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field             # Pydantic lo usamos para validar,convertir y estructurar datos
 
 
-from proyecto_02.inferencia import pronosticar
-from proyecto_02.esquema import SolicitudPronostico
+from inferencia import pronosticar
+from esquema import SolicitudPronostico
 
-NOMBRE_BUNDLE = "proyecto_02/modelo_demanda.joblib"
+NOMBRE_BUNDLE = "modelo_demanda.joblib"
 
 
 estado_servicio = {"bundle":None}

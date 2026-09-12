@@ -13,6 +13,8 @@ WORKDIR /servicio
 ENV PYTHONDONTWRITEBYTECODE=1 \ 
     PYTHONUNBUFFERED=1
 
+RUN apt-get update && apt-get install -y --no-install-recommends \ libgomp1 \ && rm -rf /var/lib/apt/lists/*
+
 # Copiar solo el requirements
 
 COPY requirements.txt .

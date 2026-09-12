@@ -32,8 +32,3 @@ EXPOSE 8080
 # Ejecutar el Despliegue
 
 CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT}"]
-
-
-
-
-
